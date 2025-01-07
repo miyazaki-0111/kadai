@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>相性バトル</title>
+</head>
+<body>
+    <p>あなたの属性は<%= your %>です．</p>
+    <p>コンピュータの属性は<%= cpu %>です．</p>
+    <p>判定：<%= judgement %></p>
+    <p>現在<%= total %>試合中<%= win %>勝しています．</p>
+    <hr>
+    <form action="/aisyou">
+        <input type="text" name="zokusei" required>
+        <label for="zokusei">次は何を出す？</label>
+        <input type="hidden" name="win" value="<%= win %>">
+        <input type="hidden" name="total" value="<%= total %>">
+        <input type="submit" values="せーの">
+    </form>   
+</body>
+</html>

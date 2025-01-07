@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>eゲームです</title>
+</head>
+<body>
+    <p>あなたの数字は<%= your %>で,</p>
+    <p>cpuの数字は<%= cpu %>です．</p>
+    <p>判定：<%= judgement %></p>
+    <hr>
+    <form action="/seisi">
+        <input type="text" name="hand" required>
+        <label for="hand">1を入力して勝負開始！！</label>
+        <input type="hidden" name="win" value="<%= win %>">
+        <input type="hidden" name="total" value="<%= total %>">
+        <input type="submit" values="数字でゲームです">
+    </form>   
+</body>
+</html>
