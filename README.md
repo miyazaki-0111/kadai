@@ -192,9 +192,16 @@ git commitでディレクトリの変更をローカルリポジトリに登録�
 git commit -m '変更済み'
 ```
 
-3. **pushする**
+3. **リモートリポジトリと連携させる**
+以下のコマンドでリモートリポジトリと連携させる
+```bash
+git remote add origin <URL名>
+```
+
+
+4. **pushする**
 ```bush
-git push origin master
+git push origin main
 ```
 このコマンドで，githubに変更後のコードをpushする．
 
